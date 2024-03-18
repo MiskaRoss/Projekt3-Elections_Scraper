@@ -41,9 +41,9 @@ def get_town_names() -> list:
 # vytvoří list s jednotlivými url obcí
 def get_town_url() -> list:
     url_list = []
-    url_town = get_url().find_all("td", "cislo", 'href')
+    url_town = get_url().find_all("td", "cislo", "href")
     for ul in url_town:
-        ul = ul.a['href']
+        ul = ul.a["href"]
         url_list.append(f'https://volby.cz/pls/ps2017nss/{ul}')
     return url_list
 
@@ -58,7 +58,7 @@ def get_registered() -> list:
         people = soup.find_all('td', headers='sa2')
         for r in people:
             register_list.append(r.text)
-        return register_list
+    return register_list
 
 
 # vydané obálky:
@@ -134,11 +134,11 @@ def output_town() -> list:
     return rows
 
 
-def output_Election_results(file_name):
+def output_election_results(name_of_file):
     column = ["Town_code", "Town_name", "Registered", "Envelopes", "Valid Votes"]
     towns = output_town()
     parties = get_party()
-    print(f"I save the data to a file: {file_name}")
+    print(f"I save the data to a file: {name_of_file}")
     for party in parties:
         column.append(party)
 
@@ -165,4 +165,4 @@ if __name__ == "__main__":
     check_arguments()
     url = sys.argv[1]
     file_name = sys.argv[2]
-    output_Election_results(file_name)
+    output_election_results(file_name)
