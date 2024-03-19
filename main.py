@@ -153,9 +153,6 @@ def check_arguments():
     if len(sys.argv) != 3:
         print("Program need 2 arguments, I'm exiting the program")
         exit()
-    elif not sys.argv[1].startswith("https://www.volby.cz/pls/ps2017nss/"):
-        print("Wrong url, I'm exiting the program")
-        exit()
     elif not sys.argv[2].endswith(".csv"):
         print("Must be .csv file, I'm exiting the program")
         exit()
