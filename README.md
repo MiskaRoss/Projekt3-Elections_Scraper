@@ -42,6 +42,9 @@ python main.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=13&xnumnuts=
 ### Downloading
 
 DOWNLOADING DATA FROM THE ADDRESS: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=13&xnumnuts=7201
+DOWNLOADING DATA FROM THE ADDRESS: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=13&xnumnuts=7201
+DOWNLOADING DATA FROM THE ADDRESS: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=13&xnumnuts=7201
+DOWNLOADING DATA FROM THE ADDRESS: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=13&xnumnuts=7201
 
 I save the data to a file: vysledky_kromeriz.csv
 
